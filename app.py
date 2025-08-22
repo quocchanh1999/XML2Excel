@@ -97,7 +97,7 @@ def process_xml_to_excel_bytes_smarter(xml_file_content):
     return processed_data
 
 st.set_page_config(page_title="Trích xuất XML Hóa Đơn", layout="wide")
-st.title("📄 Trích xuất XML Hóa Đơn sang Excel")
+st.title("Trích xuất XML Hóa Đơn sang Excel")
 
 uploaded_file = st.file_uploader(
     "Chọn file XML Hóa đơn",
@@ -123,4 +123,5 @@ if uploaded_file:
                 data=excel_data,
                 file_name=new_filename,
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
             )
